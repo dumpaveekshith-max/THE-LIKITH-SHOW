@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE LIKITH SHOW</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0b0b;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(0,0,0,.85);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 5%;
+z-index:999;
+}
+
+.logo-box{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo{
+width:65px;
+height:65px;
+border-radius:50%;
+border:3px solid white;
+object-fit:cover;
+}
+
+.logo-text{
+font-size:28px;
+font-weight:800;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff0000;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),
+url('channels4_banner.jpg');
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+.hero h1{
+font-size:80px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+max-width:800px;
+margin:auto;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 35px;
+background:#ff0000;
+color:white;
+text-decoration:none;
+font-weight:700;
+border-radius:40px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+font-size:45px;
+text-align:center;
+margin-bottom:50px;
+color:#ff4444;
+}
+
+.about{
+background:#151515;
+padding:40px;
+border-radius:20px;
+line-height:2;
+font-size:18px;
+}
+
+.video-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.video-card{
+background:#161616;
+padding:15px;
+border-radius:20px;
+transition:.3s;
+box-shadow:0 0 15px rgba(255,255,255,.08);
+}
+
+.video-card:hover{
+transform:translateY(-8px);
+}
+
+.video-card img{
+width:100%;
+border-radius:15px;
+transition:.4s;
+}
+
+.video-card img:hover{
+transform:scale(1.03);
+}
+
+.video-card h3{
+margin-top:15px;
+text-align:center;
+}
+
+.gita-box{
+display:grid;
+gap:25px;
+}
+
+.sloka{
+background:#151515;
+padding:25px;
+border-left:5px solid orange;
+border-radius:15px;
+}
+
+.sloka h3{
+color:orange;
+margin-bottom:15px;
+}
+
+.sloka p{
+line-height:1.8;
+}
+
+.krishna{
+padding:100px 20px;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
+url('channels4_banner.jpg');
+
+background-size:cover;
+background-position:center;
+}
+
+.krishna h2{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.krishna p{
+font-size:24px;
+max-width:900px;
+margin:auto;
+line-height:1.8;
+}
+
+.channel{
+background:#151515;
+padding:40px;
+border-radius:20px;
+text-align:center;
+}
+
+.channel a{
+display:inline-block;
+margin-top:25px;
+padding:15px 35px;
+background:red;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+}
+
+footer{
+background:black;
+text-align:center;
+padding:40px;
+}
+
+footer p{
+line-height:2;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:45px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.logo-text{
+font-size:20px;
+}
+
+nav{
+display:none;
+}
+
+.section-title{
+font-size:32px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="logo-box">
+<img src="logo.png" class="logo">
+<div class="logo-text">THE LIKITH SHOW</div>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#videos">Videos</a>
+<a href="#gita">Gita</a>
+<a href="#channel">Channel</a>
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>THE LIKITH SHOW</h1>
+
+<p>
+Welcome to THE LIKITH SHOW.
+Spirituality • Bhagavad Gita • Knowledge • Inspiration • Culture
+</p>
+
+<a href="https://www.youtube.com/@TheLikithShow" target="_blank" class="btn">
+SUBSCRIBE NOW
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Us</h2>
+
+<div class="about">
+
+THE LIKITH SHOW is dedicated to sharing inspiring content,
+Bhagavad Gita teachings, spiritual knowledge,
+motivation, devotion and meaningful stories.
+
+Our goal is to spread wisdom and positivity through
+high-quality videos and educational content.
+
+</div>
+
+</section>
+
+<section id="videos">
+
+<h2 class="section-title">Featured Videos</h2>
+
+<div class="video-grid">
+
+<div class="video-card">
+<a href="https://youtu.be/Vb9oCPo8nLs?si=wgNGWkQmZik2APhy" target="_blank">
+<img src="https://img.youtube.com/vi/Vb9oCPo8nLs/maxresdefault.jpg">
+</a>
+<h3>Featured Video 1</h3>
+</div>
+
+<div class="video-card">
+<a href="https://youtu.be/Il2LnYQRqEM?si=DiI5wGnxdb8Qshjp" target="_blank">
+<img src="https://img.youtube.com/vi/Il2LnYQRqEM/maxresdefault.jpg">
+</a>
+<h3>Featured Video 2</h3>
+</div>
+
+<div class="video-card">
+<a href="https://youtu.be/YIzXtKxSTkg?si=TuZDMsxqztc5weRq" target="_blank">
+<img src="https://img.youtube.com/vi/YIzXtKxSTkg/maxresdefault.jpg">
+</a>
+<h3>Featured Video 3</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="gita">
+
+<h2 class="section-title">Srimad Bhagavad Gita</h2>
+
+<div class="gita-box">
+
+<div class="sloka">
+
+<h3>Bhagavad Gita 2.47</h3>
+
+<p>
+कर्मण्येवाधिकारस्ते मा फलेषु कदाचन ।
+मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥
+</p>
+
+<br>
+
+<p>
+You have the right to perform your duty,
+but not to the fruits of your actions.
+</p>
+
+</div>
+
+<div class="sloka">
+
+<h3>Bhagavad Gita 4.7</h3>
+
+<p>
+यदा यदा हि धर्मस्य ग्लानिर्भवति भारत ।
+अभ्युत्थानमधर्मस्य तदात्मानं सृजाम्यहम् ॥
+</p>
+
+<br>
+
+<p>
+Whenever righteousness declines and unrighteousness rises,
+I manifest Myself.
+</p>
+
+</div>
+
+<div class="sloka">
+
+<h3>Bhagavad Gita 18.66</h3>
+
+<p>
+सर्वधर्मान्परित्यज्य मामेकं शरणं व्रज ।
+अहं त्वां सर्वपापेभ्यो मोक्षयिष्यामि मा शुचः ॥
+</p>
+
+<br>
+
+<p>
+Surrender unto Me alone and I shall free you from all sins.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="krishna">
+
+<h2>Lord Krishna's Message</h2>
+
+<p>
+"O Partha, perform your duty without fear,
+remain balanced in success and failure,
+and dedicate every action to righteousness."
+</p>
+
+</section>
+
+<section id="channel">
+
+<h2 class="section-title">Visit Our Channel</h2>
+
+<div class="channel">
+
+<h3>THE LIKITH SHOW</h3>
+
+<p style="margin-top:20px;">
+Watch amazing videos, spirituality, Bhagavad Gita wisdom,
+motivation and knowledge.
+</p>
+
+<a href="https://www.youtube.com/@TheLikithShow" target="_blank">
+OPEN YOUTUBE CHANNEL
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>THE LIKITH SHOW</h2>
+
+<p>
+Knowledge • Spirituality • Motivation • Bhagavad Gita
+</p>
+
+<p>
+© 2026 THE LIKITH SHOW. All Rights Reserved.
+</p>
+
+<p>
+🚩 जय श्री कृष्ण 🚩
+</p>
+
+</footer>
+
+</body>
+</html>
